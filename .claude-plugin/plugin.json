@@ -1,0 +1,34 @@
+{
+  "name": "chroma",
+  "version": "1.0.0",
+  "description": "Colors, styles, gradients and legacy formatting codes in replies",
+  "author": {
+    "name": "Dev-Sebi",
+    "url": "https://github.com/Dev-Sebi"
+  },
+  "homepage": "https://github.com/Dev-Sebi/Claude-Color",
+  "repository": "https://github.com/Dev-Sebi/Claude-Color",
+  "license": "MIT",
+  "keywords": [
+    "color",
+    "colors",
+    "formatting",
+    "gradient",
+    "terminal",
+    "theme"
+  ],
+  "userConfig": {
+    "teachModel": {
+      "type": "boolean",
+      "title": "Teach the model the syntax",
+      "description": "Adds a short syntax guide to each prompt so replies use colors",
+      "default": true
+    },
+    "legacyCodes": {
+      "type": "boolean",
+      "title": "Legacy codes",
+      "description": "Draw §a / &a style legacy color and format codes",
+      "default": true
+    }
+  }
+}

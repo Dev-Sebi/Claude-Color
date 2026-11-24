@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="448" height="405" viewBox="0 0 448 405" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14" xml:space="preserve" style="white-space: pre">
+<rect width="100%" height="100%" rx="10" fill="#1a1b26"/>
+<path d="M0 10 a10 10 0 0 1 10 -10 h428 a10 10 0 0 1 10 10 v24 h-448 z" fill="#16161e"/>
+<circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="40" cy="17" r="6" fill="#febc2e"/><circle cx="60" cy="17" r="6" fill="#28c840"/>
+<text x="224" y="21" fill="#565f89" font-size="12" text-anchor="middle">chroma: markdown stays markdown</text>
+<text x="22" y="62" fill="#565f89" font-size="11" letter-spacing="1.5">REPLY TEXT</text>
+<text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4 164.8 173.2 181.6 190.0 198.4 206.8 215.2" y="92" fill="#565f89"># Release {green}v2.1{/}</text>
+<text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4 164.8 173.2 181.6 190.0 198.4 206.8 215.2 223.6 232.0 240.4 248.8 257.2 265.6 274.0 282.4 290.8 299.2 307.6 316.0" y="113" fill="#565f89">- **Fixed** login on {cyan}Safari{/}</text>
+<text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4 164.8 173.2 181.6 190.0 198.4 206.8 215.2 223.6 232.0 240.4 248.8 257.2 265.6 274.0 282.4 290.8 299.2 307.6 316.0 324.4 332.8 341.2 349.6 358.0 366.4" y="134" fill="#565f89">- *Removed* the {strike}legacy{/} endpoint</text>
+<text x="" y="155" fill="#565f89"></text>
+<text x="22.0 30.4 38.8 47.2 55.6" y="176" fill="#565f89">```ts</text>
+<text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4 164.8 173.2 181.6 190.0 198.4 206.8 215.2 223.6 232.0 240.4 248.8 257.2 265.6 274.0 282.4 290.8 299.2 307.6 316.0 324.4 332.8 341.2 349.6 358.0 366.4 374.8 383.2 391.6" y="197" fill="#565f89">const tag = '{red}not colored inside code{/}'</text>
+<text x="22.0 30.4 38.8" y="218" fill="#565f89">```</text>
+<rect x="0" y="234" width="448" height="1" fill="#292e42"/>
+<text x="22" y="258" fill="#565f89" font-size="11" letter-spacing="1.5">TERMINAL</text>
+<text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8" y="288" fill="#c0caf5" font-weight="700">Release </text><text x="89.2 97.6 106.0 114.4" y="288" fill="#30a46c" font-weight="700">v2.1</text>
+<text x="22.0 30.4" y="309" fill="#c0caf5">• </text><text x="38.8 47.2 55.6 64.0 72.4" y="309" fill="#c0caf5" font-weight="700">Fixed</text><text x="80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4" y="309" fill="#c0caf5"> login on </text><text x="164.8 173.2 181.6 190.0 198.4 206.8" y="309" fill="#00a2c7">Safari</text>
+<text x="22.0 30.4" y="330" fill="#c0caf5">• </text><text x="38.8 47.2 55.6 64.0 72.4 80.8 89.2" y="330" fill="#c0caf5" font-style="italic">Removed</text><text x="97.6 106.0 114.4 122.8 131.2" y="330" fill="#c0caf5"> the </text><text x="139.6 148.0 156.4 164.8 173.2 181.6" y="330" fill="#c0caf5">legacy</text><rect x="139.60000000000002" y="325.5" width="50.400000000000006" height="1.2" fill="#c0caf5"/><text x="190.0 198.4 206.8 215.2 223.6 232.0 240.4 248.8 257.2" y="330" fill="#c0caf5"> endpoint</text>
+
+<rect x="14" y="357" width="420" height="21" fill="#13141c"/><text x="22.0 30.4 38.8 47.2 55.6 64.0 72.4 80.8 89.2 97.6 106.0 114.4 122.8 131.2 139.6 148.0 156.4 164.8 173.2 181.6 190.0 198.4 206.8 215.2 223.6 232.0 240.4 248.8 257.2 265.6 274.0 282.4 290.8 299.2 307.6 316.0 324.4 332.8 341.2 349.6 358.0 366.4 374.8 383.2 391.6" y="372" fill="#c0caf5">const tag = '{red}not colored inside code{/}'</text>
+</svg>

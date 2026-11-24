@@ -1,0 +1,19 @@
+{
+  "name": "dev-sebi",
+  "owner": {
+    "name": "Dev-Sebi",
+    "url": "https://github.com/Dev-Sebi"
+  },
+  "metadata": {
+    "description": "Mods by Dev-Sebi"
+  },
+  "plugins": [
+    {
+      "name": "chroma",
+      "source": "./",
+      "description": "Colors, styles, gradients and legacy formatting codes in replies",
+      "version": "1.0.0",
+      "category": "productivity"
+    }
+  ]
+}
