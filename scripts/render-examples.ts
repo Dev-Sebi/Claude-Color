@@ -134,7 +134,7 @@ const codesTable = () =>
     .join('\n') + '\n\n§l§ll bold§r  §o§oo italic§r  §n§nn underline§r  §m§mm strike§r  §kkk§r k obfuscated  r reset'
 
 mkdirSync(new URL('../docs/images/', import.meta.url), { recursive: true })
-for (const example of [...EXAMPLES, { file: 'legacy-codes', title: 'chroma: legacy codes', source: codesTable(), isSourceShown: false }]) {
+for (const example of [...EXAMPLES, { file: 'legacy-codes', title: 'claude-color: legacy codes', source: codesTable(), isSourceShown: false }]) {
   const svg = renderSvg(example.title, example.source, example.isSourceShown)
   writeFileSync(new URL(`../docs/images/${example.file}.svg`, import.meta.url), svg)
   console.log(`docs/images/${example.file}.svg`)

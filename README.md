@@ -1,8 +1,8 @@
 <p align="center">
-  <img src=".claude-plugin/icon.png" width="128" alt="chroma icon">
+  <img src=".claude-plugin/icon.png" width="128" alt="claude-color icon">
 </p>
 
-<h1 align="center">chroma</h1>
+<h1 align="center">Claude Color</h1>
 
 <p align="center">
   Colors, styles, gradients and legacy formatting codes for Claude Code replies.
@@ -12,11 +12,11 @@
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-8e4ec6.svg">
   <img alt="Tests" src="https://img.shields.io/badge/tests-21%20passing-30a46c.svg">
-  <img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin-f76b15.svg">
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-plugin-D97757?logo=claude&logoColor=white">
 </p>
 
 <p align="center">
-  <img src="docs/images/hero.svg" alt="chroma demo: colored status words, text styles, gradients and a server banner">
+  <img src="docs/images/hero.svg" alt="claude-color demo: colored status words, text styles, gradients and a server banner">
 </p>
 
 ## Contents
@@ -60,14 +60,14 @@ Run inside Claude Code:
 
 ```text
 /plugin marketplace add Dev-Sebi/Claude-Color
-/plugin install chroma@dev-sebi
+/plugin install claude-color@dev-sebi
 ```
 
 Or from your shell:
 
 ```bash
 claude plugin marketplace add Dev-Sebi/Claude-Color
-claude plugin install chroma@dev-sebi
+claude plugin install claude-color@dev-sebi
 ```
 
 Pick the **user** scope to have it in every session. The mod is active right away.
@@ -93,7 +93,7 @@ To load it in every session without the flag, add the folder to `CLAUDE_CODE_PLU
 
 ```bash
 claude plugin marketplace update dev-sebi
-claude plugin update chroma@dev-sebi
+claude plugin update claude-color@dev-sebi
 ```
 
 Then run `/reload-plugins` in open sessions.
@@ -101,12 +101,12 @@ Then run `/reload-plugins` in open sessions.
 ### Uninstalling
 
 ```bash
-claude plugin uninstall chroma@dev-sebi
+claude plugin uninstall claude-color@dev-sebi
 ```
 
 ### Check that it works
 
-1. Run `/color demo`. You should see the colored demo from the top of this page.
+1. Run `/colors demo`. You should see the colored demo from the top of this page.
 2. Ask for something like *"give me a colored status summary"*.
 
 ## Usage
@@ -204,10 +204,10 @@ Both `§` and `&` work. A color code resets the format codes before it, and ever
 
 | Command | Effect |
 | --- | --- |
-| `/color` or `/color help` | Colored cheat sheet |
-| `/color demo` | Shows every feature at once |
-| `/color off` | Turns colors and the model guide off (saved across sessions) |
-| `/color on` | Turns them back on |
+| `/colors` or `/colors help` | Colored cheat sheet |
+| `/colors demo` | Shows every feature at once |
+| `/colors off` | Turns colors and the model guide off (saved across sessions) |
+| `/colors on` | Turns them back on |
 
 ## Configuration
 
@@ -216,7 +216,7 @@ Set the options in the plugin's config menu (`/plugin`), or under `pluginConfigs
 ```json
 {
   "pluginConfigs": {
-    "chroma": {
+    "claude-color": {
       "teachModel": true,
       "legacyCodes": true
     }
@@ -243,7 +243,7 @@ flowchart LR
 ```
 
 - `hooks/format.ts` is a pure parser: text in, styled runs out. It never touches code blocks, inline code or tables.
-- `hooks/register.tsx` wires it into Claude Code: the prompt hook, the `/color` command and the renderers for replies and command output.
+- `hooks/register.tsx` wires it into Claude Code: the prompt hook, the `/colors` command and the renderers for replies and command output.
 - Only the drawing changes. The stored conversation keeps the raw tags, so `ctrl+o` and exports show the original text.
 
 ## Limitations
@@ -258,10 +258,10 @@ flowchart LR
 
 | Problem | Fix |
 | --- | --- |
-| Tags show as plain text like `{red}` | Run `/color on`, then `/reload-plugins`. Check `claude plugin list` shows `chroma` as enabled. |
+| Tags show as plain text like `{red}` | Run `/colors on`, then `/reload-plugins`. Check `claude plugin list` shows `claude-color` as enabled. |
 | Replies have no colors at all | `teachModel` may be off, or the prompt hook is blocked by another plugin. Ask for colors explicitly to test the renderer. |
 | `§` in normal text turns into colors | Set `legacyCodes` to `false`, or escape it as `\§`. |
-| A hook was skipped | Start with `claude --debug` and look for lines starting with `chroma:`. |
+| A hook was skipped | Start with `claude --debug` and look for lines starting with `claude-color:`. |
 
 ## Development
 
@@ -269,7 +269,7 @@ flowchart LR
 git clone https://github.com/Dev-Sebi/Claude-Color.git
 cd Claude-Color
 
-claude plugin validate .            # manifest and hooks check
+claude plugin validate .            # manifest and hooks check (flags the claude- name prefix, safe to ignore)
 claude plugin test .                # 21 tests: parser and rendering
 node scripts/render-examples.ts     # regenerates docs/images/*.svg (Node 22.18+)
 claude --plugin-dir .               # try it, saves reload on their own
@@ -284,9 +284,9 @@ Project layout:
   icon.png
 hooks/
   hooks.json           names the hooks module
-  register.tsx         hooks: prompt guide, /color command, renderers
+  register.tsx         hooks: prompt guide, /colors command, renderers
   format.ts            parser: tags, gradients, legacy codes, markdown
-  samples.ts           /color demo and cheat sheet text
+  samples.ts           /colors demo and cheat sheet text
   *.test.ts(x)         tests
 scripts/
   render-examples.ts   builds the README images from the parser

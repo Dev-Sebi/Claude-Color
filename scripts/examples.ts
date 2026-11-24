@@ -5,13 +5,13 @@ export type Example = { file: string; title: string; source: string; isSourceSho
 export const EXAMPLES: Example[] = [
   {
     file: 'hero',
-    title: 'chroma',
+    title: 'claude-color',
     isSourceShown: false,
     source: DEMO,
   },
   {
     file: 'status',
-    title: 'chroma: status summary',
+    title: 'claude-color: status summary',
     isSourceShown: true,
     source: [
       '{bold}Deploy report{/}',
@@ -23,7 +23,7 @@ export const EXAMPLES: Example[] = [
   },
   {
     file: 'styles',
-    title: 'chroma: colors and styles',
+    title: 'claude-color: colors and styles',
     isSourceShown: true,
     source: [
       '{red}red{/} {orange}orange{/} {yellow}yellow{/} {green}green{/} {teal}teal{/}',
@@ -34,7 +34,7 @@ export const EXAMPLES: Example[] = [
   },
   {
     file: 'gradients',
-    title: 'chroma: gradients',
+    title: 'claude-color: gradients',
     isSourceShown: true,
     source: [
       '{bold rainbow}Rainbow headline across the whole line{/}',
@@ -44,7 +44,7 @@ export const EXAMPLES: Example[] = [
   },
   {
     file: 'banner',
-    title: 'chroma: server banner',
+    title: 'claude-color: server banner',
     isSourceShown: true,
     source: [
       '§6§l★ §e§lPIXEL ARCADE §6§l★ §r§8[§av2.4§8]',
@@ -54,7 +54,7 @@ export const EXAMPLES: Example[] = [
   },
   {
     file: 'markdown',
-    title: 'chroma: markdown stays markdown',
+    title: 'claude-color: markdown stays markdown',
     isSourceShown: true,
     source: [
       '# Release {green}v2.1{/}',

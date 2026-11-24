@@ -1,4 +1,4 @@
-/** What \`/color demo\` shows: every feature drawn once. */
+/** What \`/colors demo\` shows: every feature drawn once. */
 export const DEMO = [
   '{bold rainbow}Colored output{/}',
   '{green}✔ passed{/}  {red}✘ failed{/}  {yellow}⚠ warning{/}  {cyan}ℹ info{/}  {gray}skipped{/}',
@@ -8,7 +8,7 @@ export const DEMO = [
   '&#ff5555Hex &#55ff55codes &#5555ffwork &ktoo&r §8(obfuscated)',
 ].join('\n\n')
 
-/** What \`/color\` shows: the syntax and how each piece looks. */
+/** What \`/colors\` shows: the syntax and how each piece looks. */
 export const CHEAT_SHEET = [
   '{bold}Colored output: cheat sheet{/}',
   [
@@ -19,5 +19,5 @@ export const CHEAT_SHEET = [
     '`{/}` closes the last tag, `{/*}` closes all, `{reset}` clears everything, `\\{` is a literal brace.',
     '`§a` / `&a` {#55ff55}legacy colors{/}, `§l` bold, `§o` italic, `§n` underline, `§m` strike, `§k` obfuscated, `§r` reset, `&#RRGGBB` hex.',
   ].join('\n'),
-  '{dim}/color demo shows everything at once. /color off turns it off, /color on back on.{/}',
+  '{dim}/colors demo shows everything at once. /colors off turns it off, /colors on back on.{/}',
 ].join('\n\n')

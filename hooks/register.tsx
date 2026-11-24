@@ -4,7 +4,7 @@ import { guide, hasStyledBlock, toBlocks } from './format'
 import type { Block, Run } from './format'
 import { CHEAT_SHEET, DEMO } from './samples'
 
-const COMMAND = 'color'
+const COMMAND = 'colors'
 const ENABLED_KEY = 'enabled'
 
 function draw(elements: ElementTable, blocks: Block[]) {
@@ -42,11 +42,13 @@ export const register: Register = (on, options) => {
 
   on('session.start', async ($, e, next) => {
     isEnabled = (await $.store.get(ENABLED_KEY)) !== false
-    await $.command.register({
-      name: COMMAND,
-      description: 'Colored output: cheat sheet, demo, on or off',
-      argumentHint: '[help|demo|on|off]',
-    })
+    await $.command
+      .register({
+        name: COMMAND,
+        description: 'Colored output: cheat sheet, demo, on or off',
+        argumentHint: '[help|demo|on|off]',
+      })
+      .catch(() => $.ui.toast(`claude-color: /${COMMAND} is taken, the command is unavailable`))
     return next(e)
   })
 

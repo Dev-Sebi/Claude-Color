@@ -2,7 +2,7 @@ import { expect, test } from 'claude-code/testing'
 
 const message = (text: string, surface: 'terminal' | 'desktop') =>
   ({
-    plugin: 'chroma',
+    plugin: 'claude-color',
     component: 'AssistantMessage',
     props: { text, isFirstOfReply: true },
     surface,

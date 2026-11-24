@@ -12,6 +12,6 @@ All notable changes to this project are documented here. The format follows [Kee
 - Gradients: `rainbow`, presets and custom multi-stop gradients
 - legacy codes: `§` and `&` legacy codes, `&#RRGGBB` and long `§x` hex
 - Inline markdown inside colored paragraphs: headings, lists, bold, italic, strike, inline code
-- `/color` command with cheat sheet, demo and on/off switch
+- `/colors` command with cheat sheet, demo and on/off switch
 - Options `teachModel` and `legacyCodes`
 - Marketplace manifest, icon, README images generated from the parser
